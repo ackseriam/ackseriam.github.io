@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+
+  /* box-shadow: 0 4px 5px var(--navbar-shallow-color); */
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1580px;
+  margin: 0 auto;
+}
+/* logo*/
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.logo img {
+  border-radius: 50%;
+}
+
+/* Menu*/
+.menu {
+  display: flex;
+  flex-direction: row; /* para colocarlo como fila */
+  flex-wrap: wrap; /* para que todo los elementos que sobren se adapte y no se salga*/
+
+  list-style: none; /* para quitar los enlaces predeterminados del href*/
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  align-items: center; /* para centrar*/
+  padding: 0 15px;
+}
+.menu a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500; /*para que este como en negrita */
+  line-height: 50px;
+  text-transform: uppercase;
+}
+/* Por defecto en pantalla de escritorio estos iconos se ocultaran*/
+.open-menu,
+.close-menu {
+  display: none;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+  }
+  #info {
+    height: 600px;
+    width: 50%;
+    font-size: 50px;
+    line-height: 350px;
+    border: 1px solid black;
+  }
+  #info h4 {
+    margin-left: 0px;
+  }
+  
+@media (max-width: 950px) {
+  /* Menu*/
+  .menu {
+    flex-direction: column; /* para colocarlo como columna */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0; /* para ocultar el menu por defecto*/
+    pointer-events: none; /* esto es para deshabilitar el menu*/
+    transition: 0.3s;
+  }
+  .menu li {
+    padding: 0;
+  }
+  .menu a {
+    color: var(--text-color-inverse);
+    font-size: 18px;
+    font-weight: 900; /*para que este como en negrita */
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  /* Por defecto en pantalla de escritorio estos iconos se ocultaran*/
+  .open-menu,
+  .close-menu {
+    display: block;
+    align-self: flex-end;
+    border: none;
+    background: none;
+  }
+  .close-menu {
+    padding: 20px 15px;
+  }
+  .menu_opened {
+    /* cuando se active el menu*/
+    opacity: 1; /* el menu se va a ver */
+    pointer-events: all; /* volvera a activarse los botones del menu o eventos del punterp*/
+  }
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+
+@media (max-width: 740px){
+    #info h4 {
+        font-size: 30px;
+      }
+    
+      
+}
+@media (max-width: 674px) {
+  #info {
+    display: block;
+  }
+  #info h4 {
+    font-size: 30px;
+  }
+}
