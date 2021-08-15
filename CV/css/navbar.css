@@ -60,7 +60,7 @@
     width: 50%;
     font-size: 50px;
     line-height: 350px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
   }
   #info h4 {
     margin-left: 0px;
