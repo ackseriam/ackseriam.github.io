@@ -12,7 +12,12 @@
     --blue: #022b2b;
     --invisible: rgba(255, 255, 255, 0.253);
     --cream: #feaecef;
-}
+   /* --front-color: rgba(43, 43, 43, 0.404);*/
+    --front-color: rgba(4, 230, 218, 0.7);
+    --back-color: rgba(43, 43, 43, 0.7);
+    --hover-width: 75%;
+    --other-width: 25%;
+  }
 /*
 #con::-webkit-scrollbar{
     width: 50px;
@@ -69,8 +74,8 @@ a{
 }
 
 .horizontal-padding{
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .vertical-padding{
   padding-top: 25px;
