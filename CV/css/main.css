@@ -12,11 +12,6 @@
     --blue: #022b2b;
     --invisible: rgba(255, 255, 255, 0.253);
     --cream: #feaecef;
-   /* --front-color: rgba(43, 43, 43, 0.404);*/
-    --front-color: rgba(4, 230, 218, 0.7);
-    --back-color: rgba(43, 43, 43, 0.7);
-    --hover-width: 75%;
-    --other-width: 25%;
   }
 /*
 #con::-webkit-scrollbar{
@@ -49,20 +44,7 @@ body {
     text-align: center;
     margin: 0px;
   
-/*    grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 150px 70px 1fr 70px;  
-/* seria las fila: cabecera,menu,contenido, lateral,footer */
-  
-    /* aqui se coloca el orden las columnas con las filas
-    se repiten por cada numero de columnas y se colocan una debajo de la otra dependiendo del orden */
-/*
-    grid-template-areas: 
-        "cabecera cabecera cabecera cabecera cabecera"
-        "menu menu menu menu menu"
-        /* tambien se puede cambiar de lugar, colocando la barra lateral a la derecha */
-      /*  "lateral arti arti arti arti"
-        "pie pie pie pie pie"
-    ;*/
+
 }
   
 h4{

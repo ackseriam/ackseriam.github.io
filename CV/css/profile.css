@@ -132,9 +132,7 @@
   #info .profile-btn {
     font-size: 15px;
   }
-  #info {
-    z-index: 100;
-  }
+
   #profile-img {
     position: absolute;
     width: 40%;
