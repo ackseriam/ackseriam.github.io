@@ -43,18 +43,21 @@ var THREE=THREE||{REVISION:"56"} -->
           />
           <div>Ericka Simancas <br />{Dev-Ingeniera}</div>
         </a>
-        <button class="open-menu"  aria-label="Abrir Menu">
-          <img
-            width="30"
-            height="20"
-            src="img/hamburger-icon.jpg"
-            alt="Abrir menu"
-          />
-        </button>
-        <ul class="menu">
-          <button class="close-menu" aria-label="Cerrar menu">
-            <img width="30" height="20"  src="img/close.svg" alt="Cerrar menu" />
+        <div id="open-icon">    
+          <button class="open-menu"  aria-label="Abrir Menu">
+            <span class="top-line"></span>
+            <span class="middle-line"></span>
+            <span class="bottom-line"></span>
+             <!--<img
+              width="30"
+              height="20"
+              src="img/hamburger-icon.jpg"
+              alt="Abrir menu"
+            />-->
           </button>
+        </div>
+        
+        <ul class="menu animation move-left ">
           <li><a href="#profiless" class="selected">Perfil</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#experiencies">Experiencias</a></li>

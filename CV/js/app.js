@@ -1,35 +1,21 @@
 /* Menu*/
 const menu = document.querySelector(".menu");
-
 const openMenuBtn = document.querySelector(".open-menu");
-const closeMenuBtn = document.querySelector(".close-menu");
 
-
+/*
 openMenuBtn.onclick = () => {
-  /*          
-    skill = document.getElementById("skills");
-    skill.style.display = "none";
-    info.style.position = "none";  */       
-}
-closeMenuBtn.onclick = () => {
-    info =  document.getElementById("cont");
-    info.style.display = "block";
+              
+}*/
 
-    profile = document.getElementById("profile-img");
-    profile.style.display = "block";
-
-    skill = document.getElementById("skills");
-    skill.style.display = "block";
-}
 
 function toggleMenu(){
+    menu.classList.toggle("move-left");
+    menu.classList.toggle("animation");
     menu.classList.toggle("menu_opened");
-    menu.classList.toggle("info");
-    
-  
+    menu.classList.toggle("info");  
+    openMenuBtn.classList.toggle('open');/* con la primera la clase aparece y al segundo click desaparece*/
 }
 openMenuBtn.addEventListener("click", toggleMenu);
-closeMenuBtn.addEventListener("click", toggleMenu);
 
 window.addEventListener("scroll",function()
 {

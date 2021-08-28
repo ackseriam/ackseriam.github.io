@@ -106,8 +106,7 @@ content:"";
   opacity: 0.8;
 }
 
-.open-menu,
-.close-menu {
+.open-menu {
   display: none;
 }
 @media (max-width: 908px){
@@ -127,7 +126,7 @@ content:"";
     z-index: 100;   
   }
   
-  .menu {
+  .menu  {
    flex-direction: column; 
     position: fixed;
     margin-top: 71px;
@@ -141,8 +140,30 @@ content:"";
     pointer-events: none;
     transition: transform 0.6s linear, opacity 0.6s linear;
     z-index: 100;   
+   
   }
-  .menu
+  .menu.animation{
+    transform: translate(-30px,0);
+    -webkit-transform: translate(-10%,0); /** Chrome & Safari **/
+    -o-transform: translate(-10%,0); /** Opera **/
+    -moz-transform: translate(-10%,0); /** Firefox **/
+    
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+
+  }
+  .move-left{
+    transform: translate(5px,0);
+    position: absolute;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+}
+  
   .menu li {
     padding: 0;  
     transform: rotateY(0deg);
@@ -160,33 +181,107 @@ content:"";
     margin-right: -100px;
  }
  
- 
-  .open-menu,
-  .close-menu {
-    display: block;
-    align-self: flex-end;
-    border: none;
+
+  #open-icon button{
     background: none;
-    margin-top: 0px;
-    top: 0px;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 60px;
+    height: 60px;
   }
-  .close-menu {
-    padding: 20px 15px;
-    margin-top: 5px;
-  
+   #open-icon button span{
+    border-radius: 5px;
+    background: white;
+    display: block;
+    width: 60%;
+    margin: 5px auto;
+    height: 2px;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* corre la animacion y se queda se indica en la animacion*/
+}
+#open-icon button.open .top-line{
+  animation-name: top-line-animation;
+}
+#open-icon button.open .middle-line{
+  animation-name: middle-line-animation;
+}
+#open-icon button.open .bottom-line{
+  animation-name: bottom-line-animation;
+}
+
+#open-icon button .top-line{
+  animation-name: top-line-animation-close;
+}
+#open-icon button .middle-line{
+  animation-name: middle-line-animation-close;
+}
+#open-icon button .bottom-line{
+  animation-name: bottom-line-animation-close;
+}
+
+@keyframes  top-line-animation{
+    50%, 100%{
+      margin: 0 auto;
+      transform: translateY(2px) rotate(-45deg);
+    }
+}
+@keyframes  bottom-line-animation{
+  50%, 100%{
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
   }
- .scroll .open-menu{
-    margin-right: 0px;
+}
+@keyframes  middle-line-animation{
+  20%, 100%{
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
   }
+}
+@keyframes  top-line-animation-close{
+ 0%{/* aqui se queda como quedo la propiedad con el efecto */
+    margin: 0 auto;
+    transform: translateY(2px) rotate(-45deg);
+  }
+  50%, 100%{
+    /*Aqui cambia a como estaba inicialmente */
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes  bottom-line-animation-close{
+  0%{
+    margin: 0 auto;
+    transform: translateY(-2px) rotate(45deg);
+  }
+  50%, 100%{
+    margin: 5px auto;
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+@keyframes  middle-line-animation-close{
+  0%{
+    margin: 0 auto;
+    width: 0;
+    opacity: 0;
+  }
+  20%, 100%{
+    margin: 0 auto;
+    width: 60%;
+    opacity: 1;
+  }
+}
   .menu_opened {
     opacity: 1; 
     pointer-events: all; 
   }
+  /*
   .open-menu:focus:not(:focus-visible),
   .close-menu:focus:not(:focus-visible) {
     outline: none;
   }
- 
+ */
   .menu a::after{
   content: none;
   }
