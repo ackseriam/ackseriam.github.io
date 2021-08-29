@@ -2,7 +2,6 @@
 
 .header {
   position: fixed;
-
   left: 0;
   top: 0;
   right: 0;
@@ -132,11 +131,12 @@ content:"";
      .menu{
       flex-direction: column; 
       position: fixed;
-      margin-top: 71px;
+      margin-top: 75px;
       margin-left: 0px;
       left: 0;
       margin-right: 0px;
-      width: 30%;
+      width: 50%;
+      height: 500px;
       background-color: var(--menu-mobile-background-color);
       height: 500px;
       align-items: center;
@@ -294,12 +294,16 @@ content:"";
 }
 @media (max-width: 660px) {   
   .menu  {
-    width: 40%;
+    width: 50%;
   }
  
  
 }
 @media (max-width: 573px) {
+  .menu{
+    width: 50%;
+    z-index: 100;
+  }
   .logo {
     display: flex;
     align-items: center;
@@ -316,230 +320,5 @@ content:"";
   .menu_opened a{
     font-size: 15px;
     
-  }
-  
+  }  
 }
-
-/*
-.header {
-  position: fixed;
- 
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  padding-right: 0px;
-  padding: 30px  20px;
-  z-index: 100;  
-}
-/* menu cuando se hace scroll
-.scroll{
-  background: rgba(0, 0, 0, 0.575);
-  color: white ;
-  padding: 5px 10px;
-  padding-right: 0px;
-  padding-left: 0px;
-  transition: 1.5s;
-  position: fixed;
-}
-.scroll .menu a::after{
-  content:"";
-   background-color:var(--theme-color);
-   position: absolute;
-   left: 0;
-   top: calc(100% + 4px);
-   width: 100%;
-   height: 4px;
-   right: 0px;
-    opacity: 0; /* por defecto no se vera
-    transition: opacity 0.3s;
-  }
-  .scroll .menu a:hover{
-    color: var(--text-color);
-    transition: opacity 0.4s;
-  }
-  /* cierra el menu con scroll
-.topnav {
-  display: flex;
-  justify-content: space-between;
- padding: 10px;
- padding-right: 30px;
-  max-width: 1580px;
-
-}
-/* logo
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--text-color);
-}
-.logo img {
-  border-radius: 50%;
-}
-
-/* Menu
-.menu {
-  display: flex;
-  flex-direction: row; /* para colocarlo como fila 
-  flex-wrap: wrap; /* para que todo los elementos que sobren se adapte y no se salga
-  list-style: none; /* para quitar los enlaces predeterminados del href
-  margin: 0;
-  margin-right: px;
-  padding: 0;
-}
-.menu li {
-  align-items: center; /* para centrar
-  padding: 0 15px;
-}
-.menu a {
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 500; /*para que este como en negrita 
-  line-height: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.5s;
-  position: relative;
-}
-.menu a::after{
-content:"";
- background-color:var(--secundary-color);
- position: absolute;
- left: 0;
- top: calc(100% + 4px);
- width: 100%;
- height: 4px;
-  opacity: 0; /* por defecto no se vera
-  transition: opacity 0.3s;
-  animation: animat 3sg alternate none iteration-count linear forwards;
-}
-@keyframes animat {
-  
-}
-.menu a:hover{
-  color: var(--blue);
-  transition: opacity 0.4s;
-}
-.menu a.selected::after,
-.menu a:hover::after{
-  opacity: 0.8; /* aqui hace que cuando se posicione en el enlace se refleje 
-}
-
-/* Por defecto en pantalla de escritorio estos iconos se ocultaran
-.open-menu,
-.close-menu {
-  display: none;
-}
-@media (max-width: 950px) {
-  /* Menu
-  .topnav{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    max-width: 1580px;
-    margin: 0 auto;
-    margin-right: 20px;
-  }
-  
-  .menu {
-    flex-direction: column; /* para colocarlo como columna
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    background-color: var(--menu-mobile-background-color);
-    height: 100%;
-    
-    opacity: 0; /* para ocultar el menu por defecto
-    pointer-events: none; /* esto es para deshabilitar el menu
-    transition: 0.3s;
-    z-index: 100;   
-  }
-  .menu li {
-    padding: 0;
-  }
-  .menu a {
-    color: var(--text-color-inverse);
-    font-size: 25px;
-    font-weight: 900; /*para que este como en negrita 
-    line-height: 60px;
-    text-transform: uppercase;
-  }
- 
-  /* Por defecto en pantalla de escritorio estos iconos se ocultaran
-  .open-menu,
-  .close-menu {
-    display: block;
-    align-self: flex-end;
-    border: none;
-    background: none;
-  }
-  .close-menu {
-    padding: 20px 15px;
-    margin-top: 23px;
-  }
- .scroll .open-menu{
-    margin-right: -10px;
-  }
-  .menu_opened {
-    /* cuando se active el menu
-    opacity: 1; /* el menu se va a ver
-    pointer-events: all; /* volvera a activarse los botones del menu o eventos del punter
-  }
-  .open-menu:focus:not(:focus-visible),
-  .close-menu:focus:not(:focus-visible) {
-    outline: none;
-  }
- 
-  .menu a::after{
-  content: none;
-  }
-  .menu a:hover,
-  .menu a.selected{
-    color: var(--secundary-color);
-  }
-  .scroll .menu_opened  a:hover,
- .scroll .menu_opened a.selected{
-    color: var(--secundary-color);
-  }
-  .menu a.selected::after,
-  .menu a:hover::after{
-    opacity: 0.8; /* aqui hace que cuando se posicione en el enlace se refleje 
-  }
- 
-}
-@media (max-width: 573px) {
-  .logo {
-    display: flex;
-    align-items: center;
-    font-size: 10px;
-    font-weight: 500;
-    color: var(--text-color);
-  }
-  .logo img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
-  .close-menu {
-    padding: 20px 15px;
-    margin-top: 30px;
-    font-size: 10px;
-  }
-  .menu_opened a{
-    font-size: 15px;
-    
-  }
-  
-}
-@media (max-width: 500px) {
-  .scroll .open-menu{
-    margin-right: -10px;
-    width: 20px;
-  }
-}
-
-*/

@@ -3,6 +3,7 @@
     padding: 25px;
     max-width: 500px;
     margin: 0 auto;
+ 
 }
 .experiences-body{
     background-color: var(--menu-mobile-background-color) ;
@@ -12,10 +13,11 @@
     width: 100%;
     position: relative;
     top: 30px;
+    
 }
 .wave_bottom{
     transform: scaleY(-1);
-    top: -4px;
+    top: -5px;
 }
 .experiences-title{
     text-align: center;
@@ -46,8 +48,14 @@
     font-size: 13px;
     margin-top: 10px;
 }
-
-@media (min-width: 950px) {
+@media (min-width: 759px),(min-width: 1200px) {
+    .wave_bottom{
+        transform: scaleY(-1);
+        top: -15px;
+        
+    }
+}
+@media (min-width: 800px){
     .experiences-title{
         text-align: center;
         text-transform: uppercase;
