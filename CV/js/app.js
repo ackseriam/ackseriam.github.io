@@ -28,7 +28,7 @@ window.addEventListener("scroll",function()
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 
-const textArray = [" Web Developer", "Ingeniero en Informática","Autodidacta", "Fullstack developer"];
+const textArray = [" Web Developer", "Ingeniero en Informática","Autodidacta", "Fullstack developer","Especialista SEO"];
 const typingDelay = 150;
 const erasingDelay = 200;
 const newTextDelay = 200;
