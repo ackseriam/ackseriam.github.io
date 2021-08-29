@@ -3,11 +3,13 @@
     padding: 25px;
     max-width: 500px;
     margin: 0 auto;
+    
  
 }
 .experiences-body{
     background-color: var(--menu-mobile-background-color) ;
     color: var(--primary-color);
+
 }
 .wave{
     width: 100%;
@@ -51,7 +53,7 @@
 @media (min-width: 759px),(min-width: 1200px) {
     .wave_bottom{
         transform: scaleY(-1);
-        top: -15px;
+        top: -5px;
         
     }
 }
