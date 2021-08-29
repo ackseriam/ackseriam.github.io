@@ -1,0 +1,110 @@
+.experiences{
+    text-align: left;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.experiences-body{
+    background-color: var(--menu-mobile-background-color) ;
+    color: var(--primary-color);
+}
+.wave{
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+.wave_bottom{
+    transform: scaleY(-1);
+    top: -4px;
+}
+.experiences-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.experience-date{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--secundary-color);
+}
+.experience-company{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.experience-position{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.experience-description{
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+@media (min-width: 950px) {
+    .experiences-title{
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 30px;
+        margin: 25px;
+    }
+    
+    .experience-date{
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--secundary-color);
+    }
+    .experience-company{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    .experience-position{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .experience-description{
+        font-weight: 300;
+        font-size: 13px;
+        margin-top: 10px;
+        line-height: 1.3;
+    }
+    .experences-grid{
+        display: grid;   
+        grid-template-columns: 1fr 2px 1fr;
+        gap: 20px 70px;
+    }
+    .line{
+        background-color: var(--text-color-inverse);
+        position: relative;
+    }
+    /*se colocara un elemento antes del elemento con before y despues con after */
+    .line::before,
+    .line::after
+    {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: var(--text-color-inverse);
+        border-radius: 50%;
+
+        position: absolute; /* para que no quede dos peloticas del comienzo y final se cooca esto*/
+        top: -20px;
+        left: -9px;
+    }
+    .line::after
+    {
+        top: 100%;
+        z-index: 1;
+    }/* para agregar una bolita de after antes y despues*/
+}
