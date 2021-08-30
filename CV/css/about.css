@@ -73,24 +73,35 @@ padding: 15px;
 button:hover{
     background-color: var(--primary-color);
 }
-.slider-container .action-buttons button{
+.action-buttons{
+  position: relative;
+  top: -200px;
+
+}
+.action-buttons button{
     position: absolute;
-    left: 80%;
-    top: 50%;
+    top: -50%;
+    left: 51%;
     z-index: 100;
 }
-.slider-container .action-buttons .down-button{
+.action-buttons .down-button{
     transform: translateX(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.slider-container .action-buttons .up-button{
+ .action-buttons .up-button{
     transform: translateY(-100%);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-@media  (min-width: 750px) {
+@media  (min-width: 710px) {
+    .action-buttons button{
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        z-index: 100;
+    }
     .left-slide{
         height: 100%;
         width: 50%;
@@ -150,21 +161,14 @@ button:hover{
     button:hover{
         background-color: var(--primary-color);
     }
-    .slider-container .action-buttons button{
+       
+}
+@media  (max-width: 709px) {
+    .action-buttons button{
         position: absolute;
-        left: 50%;
-        top: 50%;
+        top: -50%;
+        left: 80%;
         z-index: 100;
     }
-    .slider-container .action-buttons .down-button{
-        transform: translateX(-100%);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
-    
-    .slider-container .action-buttons .up-button{
-        transform: translateY(-100%);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }    
 }
+

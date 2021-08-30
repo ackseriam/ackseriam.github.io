@@ -211,24 +211,23 @@
     display: block;
     position: absolute;
     width: 90%;
-    height: 100%;
+    height: 480px;
   }
 
   .hover-left .right {
     display: block;
     position: absolute;
-    height: 100%;
+    height:480px;
   }
   .hover-right .right {
     display: block;
     position: absolute;
     width: 90%;
-    height: 100%;
   }
   .hover-right .left {
     display: block;
     position: absolute;
-    height: 100%;
+    height: 480px;
   }
 
   .skills-list {
