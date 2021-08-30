@@ -5,8 +5,6 @@ const profile = document.querySelector('.profile-img')
 profile.style.display = 'none';
 const body = document.body;
 body.style.overflow= 'hidden';
-
-
 let load = 0
 
 let int = setInterval(blurring, 5)
