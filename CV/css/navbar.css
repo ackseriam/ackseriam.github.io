@@ -43,7 +43,7 @@
  padding: 10px;
  padding-right: 30px;
   max-width: 1580px;
-
+z-index: 100;
 }
 
 .logo {
