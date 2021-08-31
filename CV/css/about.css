@@ -44,13 +44,22 @@
     width: 20%;
     transition: transform .5s ease-in-out;
     background-color: var(--invisible);
-
+    background-size:cover;
+    background-attachment: fixed; 
 }
-.first-image{
 
-    background-image: url('https://cdn.techtitute.com/techtitute-blog/2021/02/Caracteristicas-de-la-ingenieria-de-software-1.jpg');
-   
+.first-image
+{
+
+    background-size:cover;
+    background-attachment: fixed;   
   
+}
+.second-image, .second-image, .tercer-image
+.cuarto-image{
+    
+background-size:cover;
+   
 }
 .color{
     background-color: var(--invisible);
@@ -134,12 +143,7 @@ button:hover{
         background-color: var(--invisible);
     
     }
-    .first-image{
-    
-        background-image: url('https://cdn.techtitute.com/techtitute-blog/2021/02/Caracteristicas-de-la-ingenieria-de-software-1.jpg');
-       
-      
-    }
+   
     .color{
         background-color: var(--invisible);
     }
