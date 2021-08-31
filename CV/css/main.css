@@ -76,16 +76,9 @@ z-index: -1;
   /*
  background: url('https://cdn.capitalradio.es/embed/1ddac4a8fcc03a2c8f54c82f41618223314/codigo-binario.png?imagick=1&size=1250')
   no-repeat center center/cover;*/
-  background: #1b6e85;
-position: absolute;
-top: -30px;
-left: -30px;
-width: calc(100vw + 60px);
-height: calc(100vh + 60px);
-margin: 0 auto;
-overflow: hidden;
+display: grid;
 filter: blur(70px);
-z-index: 55;
+
 
 }
 .loading-text {

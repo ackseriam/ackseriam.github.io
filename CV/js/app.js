@@ -1,10 +1,11 @@
 
 const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.bg');
-const profile = document.querySelector('.profile-img')
-profile.style.display = 'none';
+const profiles = document.querySelector('#profiless');
+/*const profile = document.querySelector('.profile-img')
+profile.style.display = 'none';*/
+profiles.style.display = 'none';
 const body = document.body;
-body.style.overflow= 'hidden';
 let load = 0
 
 let int = setInterval(blurring, 5)
@@ -17,8 +18,8 @@ function blurring() {
     bg.style.background='none';
     body.style.overflowX= 'hidden';
     body.style.overflowY= 'auto';
-    profile.style.display = 'block';
-    bg.style.display='none';
+    profiles.style.display = 'block';
+  /*  bg.style.display='none';*/
 }
 
   loadText.innerText = `${load}%`
