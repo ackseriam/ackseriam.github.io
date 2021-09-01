@@ -215,23 +215,19 @@
    
   }
 }
-@media (max-width: 532px) {
-  .wave-skill{
-    position: absolute;
-    top: -19px;
-  } 
-}
+
 @media (max-width: 680px) {
   .wave-skill{
     position: absolute;
-      top: -px;
+      top: -21px;
    
   }
-  /*
-  .wavek_bottom{
-    position: absolute;
-    top: -40px;   
-  }*/
+  @media (max-width: 532px) {
+    .wave-skill{
+      position: absolute;
+        top: -19px;
+    } 
+  } 
   .title h2 {
     font-size: 20px;
   }
@@ -252,7 +248,10 @@
   }
 }
 @media (max-width: 482px) {
-
+  .wave-skill{
+    position: absolute;
+      top: 19px;
+  } 
   .skill-small{
     position: relative;
     margin-top: 30px;
