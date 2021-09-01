@@ -33,8 +33,8 @@ body {
   color: var(--text-color);
     font-family: 'Acme', sans-serif;
    filter: progid: DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#003073', endColorstr='#029797');
-   background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
-    background-size: 100%;
+   /*background-image: url(//img.alicdn.com/tps/TB1d.u8MXXXXXXuXFXXXXXXXXXX-1900-790.jpg);
+   */ background-size: 100%;
     background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0, var(--primary-color)), color-stop(100%, #8BCCDD));
     background-image: -webkit-linear-gradient(135deg, var(--primary-color), #8BCCDD);
     background-image: -moz-linear-gradient(45deg, var(--primary-color), #8BCCDD);
@@ -56,19 +56,23 @@ a{
 
 
 #script{
-  z-index: 100;
+/*  z-index: 100;*/
+width: 100%;
+height: 400px;
 }
 
 .fondo {
-  background: url('https://cdn.capitalradio.es/embed/1ddac4a8fcc03a2c8f54c82f41618223314/codigo-binario.png?imagick=1&size=1250')
+  background: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/02/lenguaje-programacion-1859691.jpg')
     no-repeat center center/cover;
   position: absolute;
+  background-size:cover;
+  background-attachment: fixed; 
   top: -30px;
   left: -30px;
-  width: calc(100vw + 60px);
-  height: calc(100vh + 60px);
+  width: 100vw;
+  height: calc(100vh + 150px);
   margin: 0 auto;
-  filter: blur(50px);
+  filter: blur(10px);
 z-index: -1;
 }
 
@@ -78,7 +82,6 @@ z-index: -1;
   no-repeat center center/cover;*/
 display: grid;
 filter: blur(70px);
-
 
 }
 .loading-text {

@@ -7,24 +7,62 @@
   --speed: 1000ms;
 }
 .skill-small{
- width: 100vw;
- 
-
+  padding-top: 100px;
+  width: 100vw;
+  background-color: var(--menu-mobile-background-color) ;
+  height: 100%;
 }
+.wavek {
+  width: 100%;
+  position: relative;
+  top: 20px;
+}
+.wave-skill{
+  position: absolute;
+  width: 100%;
+    top: -65px;
+ 
+}
+.wavek_bottom{
+  transform: scaleY(-1);
+  top: 20px; 
+}
+/*
+.skillss{
+  top: 50px;
+  height: 400px;
+}*/
 .skillss {
   display: grid;
+  grid-template-rows: 20% 40% 40%;
   grid-template-columns: repeat(2, 1fr);
   width: 100vw;
-  height: 500px;
+  height: 400px;
   margin: 0 auto;
   margin-right: 0px;
   margin-left: 0px;
+ top: 100px;
   z-index:-1;
 }
 .skills {
   overflow: hidden;
 }
+.title-skills {
+  top: -115px;
+  grid-row: 100%;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 auto;
+  color: var(--primary-color);
+}
 .skills.left {
+  top: 70px;
   left: 0;
   height: 100%;
   background: url("../img/frontend.png");
@@ -40,6 +78,7 @@
   background-color: var(--front-color);
 }
 .skills.right {
+  top: 70px;
   right: 0;
   height: 100%;
   background: url("../img/backend.jpg");
@@ -54,8 +93,10 @@
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--back-color);
+  background-color: var(--back-color-m);
+
 }
+
 .title h2 {
   position: absolute;
   justify-content: center;
@@ -90,8 +131,6 @@
   border-radius: 32px;
   padding: 0.5em 0.7em;
   margin: 10px;
-  /* background-color: var( --primary-color);
-    */
   
 }
 .skills-skill.blue {
@@ -148,15 +187,16 @@
   height: 500px;
 }
 .skill-small{
-  margin-top: 10%;
+  margin-top: 0px;
 }
-@media (max-width: 922px) {
-  .skill-small{
-    margin-top: 30%;
-  }
 
+@media (max-width: 940px) {
+  .wave-skill{
+     position: absolute;
+     top: -25px;      
+  }
   .skillss {
-    margin-top: -20%;
+    margin-top: 0px;
   }
   .title h2 {
     font-size: 30px;
@@ -172,14 +212,26 @@
     padding: 0.5em 0.7em;
     margin: 2px;
     position: relative;
-    /* background-color: var( --primary-color);
-        */
+   
   }
 }
-@media (max-width: 637px) {
-  .skill-small{
-    margin-top: 20%;
+@media (max-width: 532px) {
+  .wave-skill{
+    position: absolute;
+    top: -19px;
+  } 
+}
+@media (max-width: 680px) {
+  .wave-skill{
+    position: absolute;
+      top: -px;
+   
   }
+  /*
+  .wavek_bottom{
+    position: absolute;
+    top: -40px;   
+  }*/
   .title h2 {
     font-size: 20px;
   }
@@ -200,8 +252,10 @@
   }
 }
 @media (max-width: 482px) {
+
   .skill-small{
-    margin-top: 20%;
+    position: relative;
+    margin-top: 30px;
   }
  
   .skills.right::before {
@@ -224,24 +278,36 @@
     display: block;
     position: absolute;
     width: 90%;
+    height:480px;
   }
   .hover-right .left {
     display: block;
     position: absolute;
-    height: 40px;
+    height:480px;
   }
 
   .skills-list {
     width: 80%;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 940px) {
+  .wavek_bottom{
+    position: absolute;
+    padding-top: 30px;
+}
+  .skillss{
+    top: 10px;
+    height: 400px;
+  }
   .skill-small{
-    margin-top: 10%;
+  padding-bottom: -15%;
+   margin-top: -30px; 
   }
   .skills-title {
     font-size: 50px;
+    position: absolute;
   }
+  
   .skills-skill {
     margin: 20px;
     font-size: 1rem;

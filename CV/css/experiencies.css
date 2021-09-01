@@ -1,8 +1,10 @@
 .experiences{
     text-align: left;
     padding: 25px;
+   
     max-width: 500px;
     margin: 0 auto;
+    margin-top: -5px;
 }
 .experiences-body{
     background-color: var(--menu-mobile-background-color) ;

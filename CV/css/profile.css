@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
-  
+  z-index: 57;
 }
 .container {
   display: flex;
@@ -109,6 +109,16 @@
 }
 
 @media (max-width: 324px) {
+  div canvas{
+    display: none ;
+  }
+  #profiless {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 57;
+  }
   #info {
     width: 70%;
     height: 400px;
@@ -122,6 +132,18 @@
 }
 
 @media (max-width: 555px) {
+  div canvas{
+    display: none ;
+  }
+  #profiless {
+    display: grid;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
   #profile-img {
     width: 40%;
     margin: 0 auto;
