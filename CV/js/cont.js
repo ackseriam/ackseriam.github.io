@@ -3,9 +3,16 @@
 const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.bg');
 const profiles = document.querySelector('#profiless');
+const fondo = document.querySelector('.fondo');
+fondo.style.zIndex = 50;
+
+const img = document.querySelector('#profile-img');
+img.style.zIndex = -1;
+
 /*const profile = document.querySelector('.profile-img')
 profile.style.display = 'none';*/
-profiles.style.display = 'none';
+
+
 const body = document.body;
 let load = 0
 
@@ -19,8 +26,12 @@ function blurring() {
     bg.style.background='none';
     body.style.overflowX= 'hidden';
     body.style.overflowY= 'auto';
-    profiles.style.display = 'block';
-  /*  bg.style.display='none';*/
+    fondo.style.zIndex = -1;
+    profiles.style.zIndex = 1;
+    img.style.display = 'block';
+    /* 
+     
+  bg.style.display='none';*/
 }
 
   loadText.innerText = `${load}%`

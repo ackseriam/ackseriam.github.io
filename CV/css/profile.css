@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Zilla+Slab:ital,wght@1,700&display=swap");
 
+
 #profiless {
   display: grid;
   align-items: center;
@@ -47,15 +48,15 @@
   max-width: 450px;
   margin: 0 auto;
 }
-/*boton descargar cv  */
+
 #info .profile-btn {
   margin-top: 30px;
   font-size: 30px;
   border: none;
   background-color: var(--menu-mobile-background-color);
   color: var(--text-color-inverse);
-  padding: 0.5em 1em; /* el padding se ajusa al tamaño del font size del button*/
-  border-radius: 7px;
+  padding: 0.5em 1em;
+    border-radius: 7px;
   cursor: pointer;
 }
 .profile-btn:hover {
@@ -95,7 +96,7 @@
   top: 200px;
   width: 50%;
   min-width: 150px;
-  max-width: 300px;
+  max-width: 280px;
   border-radius: 50%;
   border: 3px solid var(--theme-color);
   z-index: 55;
@@ -108,30 +109,9 @@
   display: inline;
 }
 
-@media (max-width: 324px) {
-  div canvas{
-    display: none ;
-  }
-  #profiless {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    z-index: 57;
-  }
-  #info {
-    width: 70%;
-    height: 400px;
-  }
-  #info h4 {
-    font-size: 30px;
-  }
-  #info .profile-details {
-    font-size: 13px;
-  }
-}
 
-@media (max-width: 555px) {
+
+@media (max-width: 449px) {
   div canvas{
     display: none ;
   }
@@ -149,10 +129,36 @@
     margin: 0 auto;
     float: center;
   }
-}
-@media (max-width: 639px) {
+ 
   #info {
-    width: 80%;
+    width: 65%;
+    left: 15px;
+  }
+  #profile-img {
+    position: absolute;
+    width: 60%;
+    top:-1%;
+    margin: 0 auto;
+  }
+    #info h4 {
+    font-size: 21px;
+  }
+  #info .profile-details {
+    font-size: 13px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  #info .profile-btn {
+    font-size: 15px;
+  }
+}
+
+
+@media (min-width: 450px) and  (max-width: 695px)  {
+
+  #info {
+    width: 65%;
+    margin: 0 auto;
   }
   #info .profile-btn {
     font-size: 15px;
@@ -160,25 +166,37 @@
 
   #profile-img {
     position: absolute;
-    width: 40%;
+    width: 60%;
+    top:-1%;
     margin: 0 auto;
   }
+  #info h4 {
+    font-size: 23px;
+  }
+  #info .profile-details {
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 }
-@media (min-width: 639px) {
+
+@media (min-width: 696px) {
   .container {
-    width: 60%;
+    width: 70%;
     height: 500px;
     /* border: 1px solid black; */
   }
   #info {
-    width: 60%;
+    width: 55%;
     height: 500px;
+    margin: 0 auto;
   }
 
   #profile-img {
     display: flex;
     width: 50%;
     margin: 0px;
+    margin-left: 50px;
     align-items: center;
     max-width: 800px;
     border-radius: 50%;
@@ -190,8 +208,14 @@
   #info h4 {
     font-size: 35px;
   }
+  #info .profile-details {
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
   #info .profile-btn {
     font-size: 20px;
     margin-bottom: 70px;
   }
 }
+
