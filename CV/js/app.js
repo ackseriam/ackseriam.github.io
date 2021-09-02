@@ -1,9 +1,8 @@
-
+/*
 const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.bg');
 const profiles = document.querySelector('#profiless');
-/*const profile = document.querySelector('.profile-img')
-profile.style.display = 'none';*/
+
 profiles.style.display = 'none';
 const body = document.body;
 let load = 0
@@ -19,8 +18,7 @@ function blurring() {
     body.style.overflowX= 'hidden';
     body.style.overflowY= 'auto';
     profiles.style.display = 'block';
-  /*  bg.style.display='none';*/
-}
+ }
 
   loadText.innerText = `${load}%`
   loadText.style.opacity = scale(load, 0, 100, 1, 0)
@@ -37,20 +35,16 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 }
 
 /* Menu*/
+/*
 const menu = document.querySelector(".menu");
 const openMenuBtn = document.querySelector(".open-menu");
-
-/*
-openMenuBtn.onclick = () => {
-              
-}*/
 
 function toggleMenu(){
     menu.classList.toggle("move-left");
     menu.classList.toggle("animation");
     menu.classList.toggle("menu_opened");
     menu.classList.toggle("info");  
-    openMenuBtn.classList.toggle('open');/* con la primera la clase aparece y al segundo click desaparece*/
+    openMenuBtn.classList.toggle('open');/* con la primera la clase aparece y al segundo click desaparece
 }
 openMenuBtn.addEventListener("click", toggleMenu);
 
