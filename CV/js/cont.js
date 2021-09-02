@@ -15,12 +15,12 @@ profile.style.display = 'none';*/
 
 const body = document.body;
 let load = 0
-
+let resul = 0
 let int = setInterval(blurring, 5)
 
 function blurring() {
-  load++
-
+ load++  
+ resul= load*50;
   if (load > 99) {
     clearInterval(int)
     bg.style.background='none';

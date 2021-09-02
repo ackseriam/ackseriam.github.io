@@ -30,7 +30,7 @@ var THREE=THREE||{REVISION:"56"} -->
     <link type="text/css" rel="stylesheet" href="css/skills.css" />
     <link type="text/css" rel="stylesheet" href="css/about.css" />
     <link type="text/css" rel="stylesheet" href="css/experiencies.css" />
-    <link type="text/css" rel="stylesheet" href="css/projects.css" />
+    <link type="text/css" rel="stylesheet" href="css/services.css" />
 
     <!--el defer es para que al momento de que el dom se haya cargado car-->
 
@@ -56,13 +56,13 @@ var THREE=THREE||{REVISION:"56"} -->
         </div>
 
         <ul class="menu animation move-left">
-          <li><a href="#profiless" class="selected">Perfil</a></li>
-          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#skills-ha" class="selected">Habilidades</a></li>
           <li><a href="#experiences">Experiencias</a></li>
           <li><a href="#about">Sobre mi</a></li>
+          <li><a href="#services">Servicios</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#skills">Certificados</a></li>
-          <!-- <li><a href="#contact">Contacto</a></li>-->
+          <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -106,7 +106,7 @@ var THREE=THREE||{REVISION:"56"} -->
     <div class="bg">
       <img src="./img/waes.svg" alt="experiencias" class="wave-skill" />
    
-      <div class="skill-small">
+      <div class="skill-small" id="skills-ha">
         <div class="title-skills">
           <h1>Habilidades</h1>
         </div>
@@ -313,7 +313,7 @@ var THREE=THREE||{REVISION:"56"} -->
           <i class="fas fa-arrow-up"></i>
         </button>
       </div>
-      <section id="projects">
+      <section id="services">
         <!--
           <div class="projects">
           <div class="card" id="c2">
@@ -450,8 +450,8 @@ var THREE=THREE||{REVISION:"56"} -->
       </section>
     </div>
   </body>
-  <script src="js/cont.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/skill.js"></script>
+  <script defer src="js/cont.js"></script>
+  <script defer src="js/menu.js"></script>
+  <script defer src="js/app.js"></script>
+  <script defer src="js/skill.js"></script>
 </html>

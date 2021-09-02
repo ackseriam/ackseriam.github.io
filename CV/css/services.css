@@ -1,5 +1,5 @@
 
-.projects {
+.services {
 
 position: relative;
 display: flex;
@@ -69,7 +69,7 @@ display: flex;
   background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
 }
 
-.projects  span {
+.services  span {
   position: absolute;
   top: 0%;
   left: 55%;
@@ -189,7 +189,7 @@ display: flex;
   letter-spacing: 2px;
 }
 
-.projects  h1 {
+.services  h1 {
   color: #111;
   position: fixed;
   top: 0%;
@@ -197,7 +197,7 @@ display: flex;
   letter-spacing: 2px;
 }
 
-.projects .p {
+.services .p {
   font-size: 14px;
   color: #fff;
   padding: 0px 20px 20px 20px;
@@ -215,19 +215,19 @@ display: flex;
   z-index: 30;
 }
 
-.projects  li {
+.services  li {
   position: absolute;
   top: 50%;
   list-style: none;
   color: #111;
 }
 
-.projects  li:nth-child(1) {
+.services  li:nth-child(1) {
   left: 15%;
   animation: simple1 1s linear infinite;
 }
 
-.projects  li:nth-child(2) {
+.services  li:nth-child(2) {
   right: 15%;
   animation: simple 1s linear infinite;
 }

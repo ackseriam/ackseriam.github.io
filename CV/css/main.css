@@ -13,6 +13,13 @@
     --invisible: rgba(255, 255, 255, 0.253);
     --cream: #feaecef;
   }
+  html{
+    /*para que cuando baje lo haga con suavidad*/
+    scroll-behavior: smooth;
+  }
+  section[id]{
+    scroll-margin-top: 70px;
+  }
 /*
 #con::-webkit-scrollbar{
     width: 50px;
