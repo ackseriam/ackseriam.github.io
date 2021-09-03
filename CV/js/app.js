@@ -18,7 +18,6 @@ openMenuBtn.addEventListener("click", toggleMenu);
  
 /* aqui es para que el enlace con el menu responsive lo cierre
  el: ^= es para decir que todos los a herf que comience por #, "*/
-
  const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
  const observer = new IntersectionObserver(
   (entries) => {

@@ -10,7 +10,6 @@ const erasingDelay = 200;
 const newTextDelay = 200;
 let textArrayIndex = 0;
 let charIndex = 0;
-
 function type(){
     if(!(cursorSpan.classList.contains('typing'))){
         cursorSpan.classList.add('typing');
