@@ -71,3 +71,9 @@ if(target){ /* si existe el a href o la seleccion
  */
 
 
+window.addEventListener("scroll",function()
+{
+    var header = document.querySelector("header");
+    let windowPosiion = window.scrollY > 0;
+    header.classList.toggle("scroll",windowPosiion);
+})

@@ -19,9 +19,10 @@ let resul = 0
 let int = setInterval(blurring, 5)
 
 function blurring() {
- load++  
- resul= load*50;
-  if (load > 99) {
+ load++
+ const mul = load * '5'
+ resul= mul;
+  if (mul > 99) {
     clearInterval(int)
     bg.style.background='none';
     body.style.overflowX= 'hidden';
@@ -34,9 +35,9 @@ function blurring() {
   bg.style.display='none';*/
 }
 
-  loadText.innerText = `${load}%`
-  loadText.style.opacity = scale(load, 0, 100, 1, 0)
-  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+  loadText.innerText = `${mul}%`
+  loadText.style.opacity = scale(mul, 0, 100, 1, 0)
+  bg.style.filter = `blur(${scale(mul, 0, 100, 30, 0)}px)`
      
 }
 
