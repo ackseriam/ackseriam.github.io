@@ -27,7 +27,6 @@ openMenuBtn.addEventListener("click", toggleMenu);
       const id =  entry.target.getAttribute("id"); /* se obtiene el id*/ 
       /* se selecciona los a hrf que sean igual a # mas el nombre de la id */
       const menuLink = document.querySelector(`.menu a[href="#${id}"]`);
-     
       console.log(menuLink);
       /* si se encuentra una interseaccion de un espacio se resalta el enlace perteneciente
       a esa caja*/ 
