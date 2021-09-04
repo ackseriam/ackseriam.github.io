@@ -1,15 +1,11 @@
 /* nodo principal*/
 :root{
-   --body: linear-gradient(135deg,#145263,#145263 6%, #1b6e85 25%, 45%, #037e7e 55%, #029797 94% );
-    
+   --body: linear-gradient(135deg,#145263,#145263 6%, #1b6e85 25%, 45%, #037e7e 55%, #029797 94% );   
     --theme-color: #8BCCDD;
     --primary-color: #037e7e;
     --secundary-color:#000000;
     --text-color-inverse:#037e7e;
-    --text-color: white;
-
-
-    
+    --text-color: white;    
     --navbar-shallow-color: rgb(65, 64, 66);
     --menu-mobile-background-color:#D6EEF4;
     --blue: #022b2b;
