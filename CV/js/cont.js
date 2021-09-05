@@ -16,7 +16,7 @@ profile.style.display = 'none';*/
 const body = document.body;
 let load = 0
 let resul = 0
-let int = setInterval(blurring, 50)
+let int = setInterval(blurring, 70)
 
 function blurring() {
  load++
