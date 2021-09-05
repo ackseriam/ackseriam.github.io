@@ -64,8 +64,11 @@
 .skills.left {
   top: 70px;
   left: 0;
-  height: 100%;
-  background: url("../img/frontend.png");
+  width: 500px;
+  height: 500px;
+  background: url("https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg");
+  background-size:cover;
+  background-attachment: fixed; 
   background-repeat: repeat;
   background-size: cover;
 }
@@ -80,8 +83,10 @@
 .skills.right {
   top: 70px;
   right: 0;
+  background: url("https://www.tecleayteclea.com/wp-content/uploads/sites/5/2020/07/Mejores-editores-de-c%C3%B3digo-PHP.jpg");
   height: 100%;
-  background: url("../img/backend.jpg");
+  width: 100%;
+  background-attachment: fixed; 
   background-repeat: repeat;
   background-size: cover;
 }

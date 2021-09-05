@@ -1,22 +1,25 @@
-#services{
-  position: relative;
-background: var(--primary-color);
+#services{ 
+position: relative;
+background: var(--menu-mobile-background-color);
 top: -35px;
 }
 .services {
- /* display:grid;
-  grid-template-columns: repeat(3, 1fr);*/
+  margin: 0px auto ;
+  background: var(--menu-mobile-background-color);
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
   height: 500px;
   perspective: 900px;
 }
 .services-title{
   position: absolute;
-  letter-spacing: 2px;
   width: 100%;
+  text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 auto;
   
 }
 .services-title  h1{ 
@@ -28,22 +31,26 @@ top: -35px;
   font-weight: bold;
   font-size: 30px;
   margin: 0 auto;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 .wave-verde{
   width: 100%;
   position: relative;
-  top: -35px;
+  top: -34px;
   z-index: 30;
 }
+.wave_bottom-serv{
+  transform: scaleY(-1);
+  top: -40px; 
+  z-index: -1;
+}
 .card {
-
   top: 200px;
- /* grid-column: 1fr;*/
- 
-  width: 100%;
+  width: 35%;
+  max-width: 35%;
   perspective: 900px;
-  height: 100%;
+  height: 90%;
+  max-height: 90%;
   transition: .5s all ease;
   transform: rotateX(60deg) scale(0.7);
   perspective: 900px;
@@ -51,35 +58,6 @@ top: -35px;
   animation: entry 1s linear 1;
 }
 
-#c0 {
-  position: absolute;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--theme-color) 30%, var(--theme-color) 100%);
-  z-index: 300;
-  box-shadow: 0px 20px 100px #555;
-}
-
-#c1 {
-  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
-  box-shadow: 0px 20px 100px #555;
- left: 100%;
-  z-index: 0;
-}
-
-#c2 {
- left: -100%;
-  z-index: 0;
-  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
-  box-shadow: 0px 20px 100px #555;
-}
-#c3 {
- left: -20%;
-  z-index: 0;
-  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
-  box-shadow: 0px 20px 100px #555;
-}
 .card:hover {
   cursor: pointer;
   transform: rotate(0deg) scale(1) translateY(10px);
@@ -96,12 +74,9 @@ top: -35px;
   background: linear-gradient(to top, var(--theme-color) 30%,var(--theme-color)  100%);
 }
 
-#i1 {
-  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
-}
 
 #i2 {
-  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  background: linear-gradient(to bottom, #1f4949 30%, #098b8b 100%);
 }
 
 .services  span {
@@ -113,19 +88,6 @@ top: -35px;
   z-index: 10;
 }
 
-.sun {
-  position: absolute;
-  top: 50%;
-  height: 50%;
-  left: 0%;
-  width: 100%;
-}
-
-.sun1 {
-  width: 50px;
-  height: 50px;
-  box-shadow: 0px 0px 10px #fff;
-}
 
 .st4 {
   fill: var(--invisible);
@@ -150,40 +112,8 @@ top: -35px;
 }
 
 .st10 {
-  fill: #c5a7e5;
+  fill: #54b4cc;
   stroke: #222;
-}
-
-.st11 {
-  stroke: #212121;
-  opacity: 0.5;
-}
-
-#sh1 {
-  fill: #f8c56f;
-  opacity: 0.4;
-}
-
-.st0 {
-  fill: #a25a62;
-  stroke: none;
-  stroke-miterlimit: 10;
-}
-
-.st1 {
-  fill: none;
-  stroke: #a25a62;
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-}
-
-.st2 {
-  fill: #cd775c;
-}
-
-.st3 {
-  fill: #fff;
-  opacity: 0.3;
 }
 
 .story {
@@ -197,15 +127,15 @@ top: -35px;
 }
 
 #s0 {
-  background: linear-gradient(to top, var(--menu-mobile-background-color) 0%, var(--menu-mobile-background-color) 100%);
+  background: linear-gradient(to top, #1f4949 0%, #098b8b 100%);
 }
 
 #s1 {
-  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+  background: linear-gradient(to top, #1f4949 0%, #098b8b 100%);
 }
 
 #s2 {
-  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+  background: linear-gradient(to top, #1f4949 0%, #098b8b 120%);
 }
 
 .infos{
@@ -240,15 +170,7 @@ top: -35px;
   left: 30%;
   letter-spacing: 2px;
 }
-/*
-.services  h1 {
-  color: #111;
-  position: fixed;
-  top: 0%;
-  left: 30%;
- 
-}
-*/
+
 .services .p {
   font-size: 14px;
   color: #fff;
@@ -313,5 +235,58 @@ top: -35px;
   }
   100% {
     top: 0%;
+  }
+}
+
+@media (min-width:664px) and (max-width:810px){
+  
+  #services{
+    position: relative;
+  background: var(--menu-mobile-background-color);
+  }
+  .services {
+    margin: 0px auto;
+    background: var(--menu-mobile-background-color);
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 500px;
+    perspective: 900px;
+   
+  }
+  .services-title{
+    font-size: 15px;
+    
+  }
+  .services-title  h1{ 
+    
+    font-size: 30px;
+    }
+    .infos p {
+      font-size: 13px;
+      text-align:center; 
+    }
+  .card {
+    margin-top: 100px;
+    width: 35%;
+    max-width: 35%;
+    height: 65%;
+    max-height: 65%;
+  }  
+}
+@media (max-width:663px){
+  .services {
+    margin: 0px auto ;
+    background: var(--menu-mobile-background-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    perspective: 900px;
+  }
+
+ div .infos p {
+    font-size: 15px;
+    text-align:center; 
   }
 }

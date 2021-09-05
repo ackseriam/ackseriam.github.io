@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Zilla+Slab:ital,wght@1,700&display=swap");
 
 
+
 #profiless {
   display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
@@ -112,9 +117,7 @@
 
 
 @media (max-width: 449px) {
-  div canvas{
-    display: none ;
-  }
+  
   #profiless {
     display: grid;
     width: 100%;

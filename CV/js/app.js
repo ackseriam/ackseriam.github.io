@@ -26,7 +26,6 @@ openMenuBtn.addEventListener("click", toggleMenu);
       const id =  entry.target.getAttribute("id"); /* se obtiene el id*/ 
       /* se selecciona los a hrf que sean igual a # mas el nombre de la id */
       const menuLink = document.querySelector(`.menu a[href="#${id}"]`);
-      console.log(menuLink);
       /* si se encuentra una interseaccion de un espacio se resalta el enlace perteneciente
       a esa caja*/ 
       if(entry.isIntersecting){
@@ -34,7 +33,7 @@ openMenuBtn.addEventListener("click", toggleMenu);
         menuLink.classList.add("selected");
       } /*else{
         menuLink.classList.remove("selected");
-      }*/          console.log(entries);
+      }*/          
     });
   }, 
   {rootMargin: "-30px 0px -70px 0px"}
