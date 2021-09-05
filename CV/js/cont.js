@@ -16,13 +16,13 @@ profile.style.display = 'none';*/
 const body = document.body;
 let load = 0
 let resul = 0
-let int = setInterval(blurring, 5)
+let int = setInterval(blurring, 50)
 
 function blurring() {
  load++
- const mul = load * '5'
- resul= mul;
-  if (mul > 99) {
+ /*const mul = load * '5'
+ resul= mul;*/
+  if (load > 99) {
     clearInterval(int)
     bg.style.background='none';
     body.style.overflowX= 'hidden';
@@ -35,9 +35,9 @@ function blurring() {
   bg.style.display='none';*/
 }
 
-  loadText.innerText = `${mul}%`
-  loadText.style.opacity = scale(mul, 0, 100, 1, 0)
-  bg.style.filter = `blur(${scale(mul, 0, 100, 30, 0)}px)`
+  loadText.innerText = `${load}%`
+  loadText.style.opacity = scale(load, 0, 100, 1, 0)
+  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
      
 }
 
