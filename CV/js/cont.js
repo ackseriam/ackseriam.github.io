@@ -16,7 +16,7 @@ profile.style.display = 'none';*/
 const body = document.body;
 let load = 0
 let resul = 0
-let int = setInterval(blurring, 70)
+let int = setInterval(blurring, 40)
 
 function blurring() {
  load++
@@ -35,10 +35,9 @@ function blurring() {
   bg.style.display='none';*/
 }
 
-  loadText.innerText = `${load}%`
-  loadText.style.opacity = scale(load, 0, 100, 1, 0)
-  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
-     
+loadText.innerText = `${load}%`
+loadText.style.opacity = scale(load, 0, 100, 1, 0)
+bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
 }
 
 // https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
