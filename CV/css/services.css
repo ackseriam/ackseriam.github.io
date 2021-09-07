@@ -36,7 +36,7 @@ top: -35px;
 .wave-verde{
   width: 100%;
   position: relative;
-  top: -34px;
+  top: -30px;
   z-index: 0;
 }
 .wave_bottom-serv{
@@ -288,8 +288,20 @@ top: -35px;
       font-size: 10px;
       text-align:center; 
     }
+    .wave-verde{
+      width: 100%;
+      position: relative;
+      top: -30px;
+      z-index: 0;
+    }
+    .wave_bottom-serv{
+      transform: scaleY(-1);
+      top: -40px; 
+      z-index: -1;
+    }
 }
 @media (max-width:496px){
+ 
   .services {
     margin: 0px auto ;
     background: var(--menu-mobile-background-color);
@@ -335,6 +347,24 @@ top: -35px;
    max-width: 300px;
    max-height: 400px;
    z-index: 400;
+  }
+ 
+  .wave_bottom-serv{
+   
+    top: -40px; 
+   
+  }
+  
+}
+@media (max-width:285){
+  .card:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    width: 150px;
+    height: 50px;
+    perspective: 600;
+    z-index: 300;
   }
   
 }
