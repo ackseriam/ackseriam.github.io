@@ -104,6 +104,7 @@
   border-radius: 50%;
   border: 3px solid var(--theme-color);
   z-index: -1;
+  margin-left: 30px;
 }
 .profile-img {
   margin: 0 auto;
@@ -126,29 +127,24 @@
     grid-template-columns: repeat(2, 1fr);
 
   }
-  #profile-img {
-    width: 40%;
-    margin: 0 auto;
-    float: center;
-  }
  
   #info {
-    width: 65%;
-    left: 15px;
+    width: 90%;
+    margin: 0 auto;
   }
   #profile-img {
     position: absolute;
     width: 60%;
     top:-1%;
-    margin: 0 auto;
+   margin-left: -20px;
   }
     #info h4 {
-    font-size: 21px;
+    font-size: 27px;
   }
   #info .profile-details {
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 65px;
   }
   #info .profile-btn {
     font-size: 15px;
@@ -171,12 +167,13 @@
     width: 60%;
     top:-1%;
     margin: 0 auto;
+    margin-left: -20px;
   }
   #info h4 {
-    font-size: 23px;
+    font-size: 29px;
   }
   #info .profile-details {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: 40px;
   }
@@ -211,13 +208,14 @@
     font-size: 35px;
   }
   #info .profile-details {
-    font-size: 15px;
+    font-size: 20px;
     margin: 0 auto;
     margin-top: 40px;
   }
   #info .profile-btn {
     font-size: 20px;
-    margin-bottom: 70px;
+    position:absolute;
+    margin-left:-70px;
   }
 }
 

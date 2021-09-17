@@ -48,7 +48,6 @@ top: -35px;
   top: 200px;
   width: 35%;
   max-width: 35%;
-  perspective: 900px;
   height: 90%;
   max-height: 90%;
   transition: .5s all ease;
